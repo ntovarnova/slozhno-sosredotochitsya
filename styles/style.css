@@ -80,12 +80,6 @@ a {
 
 a :hover {
   color: var(--text-color);
-  font-size: 25px;
-  font-family: IBM Plex Mono, Arial, Helvetica;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   text-decoration-line: underline;
 }
 
@@ -109,28 +103,19 @@ button {
   line-height: 18px;
 }
 
-button:active {
-  outline: 1px solid var(--accent-text-color);
-  display: inline-flex;
-  padding: 0px 25px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-button:hover {
-  max-width: 110px;
+.header__theme-menu-button:hover {
+  width: 110px;
   height: 30px;
   padding: 0px 25px;
   outline: 1px solid var(--accent-color-1);
   cursor: pointer;
 }
 
-button:focus {
+.header__theme-menu-button:focus {
   outline: none;
 }
 
-button:focus-visible {
+.header__theme-menu-button:focus-visible {
   width: 104px;
   height: 1px;
   background-color: var(--accent-text-color);
@@ -138,6 +123,14 @@ button:focus-visible {
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--accent-text-color);
+  display: inline-flex;
+  padding: 0px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70px;
+  height: 25px;
 }
 
 ul.header__theme-menu-list {
@@ -175,10 +168,10 @@ ul.header__theme-menu-list {
 
 .Container {
   display: grid;
-  margin-bottom: 134px;
+  margin-block-end: 134px;
   margin-left: 513px;
   margin-right: 20px;
-  margin-top: 29px;
+  margin-block-start: 29px;
 }
 
 .title-decor {
@@ -224,7 +217,7 @@ ul.header__theme-menu-list {
   gap: 20px;
   grid-column: 1/4;
   inline-size: 315px;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .section-2 {
@@ -253,7 +246,7 @@ ul.header__theme-menu-list {
 
 .content__text-block {
   font-size: 18px;
-  margin-top: 10px;
+  margin-block-start: 10px;
 }
 
 .content__text-block a {
@@ -268,7 +261,7 @@ ul.header__theme-menu-list {
 .content-section-4 {
   margin-block-end: 60px;
   padding: 0 20px;
-  margin-bottom: 63px;
+  margin-block-end: 63px;
 }
 
 h2 {
@@ -399,11 +392,11 @@ img {
   }
 
   ul.header__theme-menu-list {
-    margin-bottom: 159.5px;
+    margin-block-end: 159.5px;
   }
 
   .decoration {
-    margin-bottom: 170px;
+    margin-block-end: 170px;
   }
 
   .decoration__item {
@@ -428,7 +421,7 @@ img {
 
   .Container {
     margin-left: 384px;
-    margin-bottom: 183px;
+    margin-block-end: 183px;
   }
 
   .card__3 {
@@ -466,7 +459,7 @@ img {
   }
 
   .decoration {
-    margin-bottom: 55px;
+    margin-block-end: 55px;
   }
 
   .decoration__item {
@@ -475,7 +468,7 @@ img {
   }
 
   ul.header__theme-menu-list {
-    margin-bottom: 60.5px;
+    margin-block-end: 60.5px;
     padding: 10px;
   }
 
@@ -490,22 +483,22 @@ img {
   }
 
   .section__title-1 {
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .section__title-2 {
     inline-size: 355px;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .content__text-block {
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .section-1 {
     display: block;
     padding: 0 10px;
-    margin-bottom: 50px;
+    margin-block-end: 50px;
   }
 
   .section-2 {
@@ -520,7 +513,7 @@ img {
   }
 
   .title-decor-3 {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
   }
 
   .content-section-3 {
@@ -531,7 +524,7 @@ img {
 
   .content-section-4 {
     padding: 0 10px;
-    margin-bottom: 40px;
+    margin-block-end: 40px;
   }
 
   .picture {
@@ -539,7 +532,7 @@ img {
   }
 
   img {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
   }
 
   .Container {
