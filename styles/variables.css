@@ -3,11 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-font: IBM Plex mono, sans-serif, Bold Regular;
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --heading-color: #db00ff;
+  --accent-text-color: #ff0070;
+  --title-color: #000028;
   --bg-color: #000028;
-  --title-color:#353430;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --accent-color-1: rgba(255, 0, 112, 0.4);
 }
-

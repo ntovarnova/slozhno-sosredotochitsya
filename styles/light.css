@@ -3,25 +3,32 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
   /* Переменные светлой темы*/
   --text-color: #353430;
+  --title-color: #353430;
   --heading-color: #ffc2e6;
   --accent-color: #ff8dcb;
-  background-image: url(../images/cover-image-light.png);
+  --accent-text-color: #353430;
+  --bg-color: #fff1f7;
 }
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text-color: #353430;
-    --heading-color: #ffc2e6;
-    --accent-color: #ff8dcb;
-
-
+    --accent-text-color: #ff0070;
+    --title-color: #000028;
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --heading-color: #db00ff;
+    --accent-color-1: rgba(255, 0, 112, 0.4);
     /* Дублируем переменные светлой темы */
+  }
+
+  .page {
+    background-image: url(/images/cover-image-dark.png);
   }
 }
 
@@ -30,30 +37,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --text-color: #353430;
   --title-color: #353430;
   --heading-color: #ffc2e6;
   --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
   background-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
-
-  .decorated-zone::before {
-    border-block-end: 1px solid #353430;
-    border-inline-start: 1px solid #353430;
-  }
-  .decorated-zone::after{
-    border-block-start: 1px solid #353430;
-    border-inline-end: 1px solid #353430 ;
-  }
+  --accent-color-1: rgba(50, 49, 45, 0.4);
 
   .decoration__item {
-    display: none;}
-
-  button {
-    color:var(--accent-color#353430);
+    display: none;
   }
-
-  button:active {
-    border: 1px solid var(--accent-color#353430);}
-  
-  } 
-  
+}
