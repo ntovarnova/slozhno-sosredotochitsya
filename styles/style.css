@@ -79,8 +79,7 @@ a {
 }
 
 a :hover {
-  color: var(--text-color);
-  text-decoration-line: underline;
+  border-bottom: 2px solid var(--text-color);
 }
 
 a :focus {
@@ -88,7 +87,8 @@ a :focus {
 }
 
 a :focus-visible {
-  outline: 1px solid var(--text-color);
+  border: 2px solid var(--text-color);
+  outline: none;
 }
 
 button {
@@ -120,9 +120,7 @@ button {
 }
 
 .header__theme-menu-button:focus-visible {
-  width: 104px;
-  height: 1px;
-  background-color: var(--accent-text-color);
+  border-bottom: 2px solid var(--accent-text-color);
 }
 
 .header__theme-menu-button_active {
