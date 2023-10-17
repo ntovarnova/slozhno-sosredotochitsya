@@ -3,17 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark {
-  --accent-text-color: #ff0070;
-  --title-color: #000028;
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --heading-color: #db00ff;
-  --accent-color-1: rgba(255, 0, 112, 0.4);
-  background-image: url(/images/cover-image-dark.png);
-}
-/* Дублируем переменные для тёмной темы }*/
+/* Дублируем переменные для тёмной темы */
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -27,5 +17,9 @@
   --accent-color: #ff0070;
   --heading-color: #db00ff;
   --accent-color-1: rgba(255, 0, 112, 0.4);
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
+
+  .decoration__item {
+    display: flex;
+  }
 }

@@ -161,7 +161,7 @@ ul.header__theme-menu-list {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
-.Container {
+.container {
   display: grid;
   margin-block-end: 134px;
   margin-left: 513px;
@@ -179,19 +179,24 @@ ul.header__theme-menu-list {
   line-height: 23.4px;
 }
 
-.title-decor-1,
-.title-decor-3 {
+.title-decor-five,
+.title-decor-pictures {
   margin-bottom: 20px;
   background-color: var(--accent-color);
   color: var(--title-color);
 }
 
-.title-decor-2 {
+.title-decor-imagine,
+.title-decor-music,
+.title-decor-take-a-walk,
+.title-decor-eat,
+.title-decor-read {
+  font-weight: 400;
   background-color: var(--accent-color);
   color: var(--title-color);
 }
 
-.section-1 {
+.section-why {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
@@ -203,11 +208,11 @@ ul.header__theme-menu-list {
     "a b";
 }
 
-.card__0 {
+.card__why {
   grid-area: a;
 }
 
-.card__3 {
+.card__what-reduces {
   display: grid;
   gap: 20px;
   grid-column: 1/4;
@@ -215,7 +220,7 @@ ul.header__theme-menu-list {
   margin-block-end: 20px;
 }
 
-.section-2 {
+.section-what {
   display: grid;
   gap: 20px;
   margin-block-end: 80px;
@@ -223,7 +228,7 @@ ul.header__theme-menu-list {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.content-section-3 {
+.content-section-how {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 0px 20px;
@@ -235,7 +240,7 @@ ul.header__theme-menu-list {
     "a b" "a b" "a b" "a b";
 }
 
-.section__title-2 {
+.section__title-what {
   grid-area: a;
 }
 
@@ -253,11 +258,12 @@ ul.header__theme-menu-list {
   text-shadow: 4px 4px 0px var(--accent-color);
 }
 
-.content-section-4 {
+.content-section-pictures {
   margin-block-end: 60px;
   padding: 0 20px;
 }
 
+h3,
 h2 {
   line-height: 23.4px;
   font-style: normal;
@@ -351,13 +357,14 @@ img {
 }
 
 @media (max-width: 1024px) {
-  .Container {
+  .container {
     max-width: 491px;
     height: 71px;
   }
 
   .header {
     min-height: 768px;
+    display: block;
   }
 
   .header__theme-menu-list {
@@ -369,15 +376,15 @@ img {
     font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   }
 
-  .content__paragraph-1 {
+  .content__paragraph-multitasking {
     min-width: 648.918px;
   }
 
-  .content__paragraph-2 {
+  .content__paragraph-imagine {
     min-width: 647.552px;
   }
 
-  .content__paragraph-3 {
+  .content__paragraph-take-a-walk {
     min-width: 649px;
   }
 }
@@ -385,13 +392,14 @@ img {
 @media (max-width: 768px) {
   .header {
     min-height: 1024px;
+    display: grid;
   }
 
-  .content-section-2 {
+  .content-section-what {
     display: block;
   }
 
-  .section-2 {
+  .section-what {
     display: block;
   }
 
@@ -417,15 +425,15 @@ img {
     top: 0;
   }
 
-  .content__paragraph-1 {
+  .content__paragraph-multitasking {
     min-width: 472px;
   }
 
-  .content__paragraph-2 {
+  .content__paragraph-imagine {
     min-width: 472px;
   }
 
-  .content__paragraph-3 {
+  .content__paragraph-take-a-walk {
     min-width: 472px;
   }
 
@@ -441,17 +449,17 @@ img {
     top: 5805px;
   }
 
-  .Container {
+  .container {
     margin-left: 384px;
   }
 
-  .card__3 {
+  .card__what-reduces {
     inline-size: 236px;
   }
 
-  .card__4,
-  .card__5,
-  .card__6 {
+  .card__what,
+  .card__food,
+  .card__gadgets {
     margin-bottom: 20px;
   }
 
@@ -506,11 +514,11 @@ img {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .section__title-1 {
+  .section__title-why {
     margin-block-end: 20px;
   }
 
-  .section__title-2 {
+  .section__title-what {
     inline-size: 355px;
     margin-block-end: 20px;
   }
@@ -519,46 +527,46 @@ img {
     margin-block-end: 20px;
   }
 
-  .content__paragraph-1 {
+  .content__paragraph-multitasking {
     min-width: 351.027px;
   }
 
-  .content__paragraph-2 {
+  .content__paragraph-imagine {
     min-width: 354.839px;
   }
 
-  .content__paragraph-3 {
+  .content__paragraph-take-a-walk {
     min-width: 353.502px;
   }
 
-  .section-1 {
+  .section-why {
     display: block;
     padding: 0 10px;
     margin-block-end: 50px;
   }
 
-  .section-2 {
+  .section-what {
     display: block;
     padding: 0 10px;
     margin-block-end: 50px;
   }
 
-  .card__3 {
+  .card__what-reduces {
     display: block;
     padding: 0 10px;
   }
 
-  .title-decor-3 {
+  .title-decor-pictures {
     margin-block-end: 10px;
   }
 
-  .content-section-3 {
+  .content-section-how {
     display: block;
     padding: 0 10px;
     margin-block-end: 50px;
   }
 
-  .content-section-4 {
+  .content-section-pictures {
     padding: 0 10px;
     margin-block-end: 40px;
   }
@@ -571,7 +579,7 @@ img {
     margin-block-end: 10px;
   }
 
-  .Container {
+  .container {
     min-width: 355px;
     height: 117px;
     margin-left: 0;
