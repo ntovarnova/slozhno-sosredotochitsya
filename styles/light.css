@@ -17,14 +17,13 @@
   --bg-color: #fff1f7;
   --accent-color-1: rgba(50, 49, 45, 0.4);
 }
-  .decoration__item {
-    display: none;
-  }
+.decoration__item {
+  display: none;
+}
 
-  .page {
-    background-image: url(../images/cover-image-light.png);
-  }
-
+.page {
+  background-image: url(../images/cover-image-light.png);
+}
 
 @media (prefers-color-scheme: light) {
   :root {
