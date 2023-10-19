@@ -16,7 +16,7 @@
   --accent-text-color: #353430;
   --bg-color: #fff1f7;
   --accent-color-1: rgba(50, 49, 45, 0.4);
-
+}
   .decoration__item {
     display: none;
   }
@@ -24,11 +24,11 @@
   .page {
     background-image: url(../images/cover-image-light.png);
   }
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */
+    /* Дублируем переменные светлой темы*/
     --text-color: #353430;
     --title-color: #353430;
     --heading-color: #ffc2e6;
