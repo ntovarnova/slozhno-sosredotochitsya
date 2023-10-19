@@ -472,7 +472,6 @@ img {
     padding: 10px;
     min-height: 668px;
     margin-top: 0;
-    min-height: 100vh;
   }
 
   .decorated-zone::after {
