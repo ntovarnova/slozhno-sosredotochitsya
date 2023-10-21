@@ -17,9 +17,9 @@
   --accent-color: #ff0070;
   --heading-color: #db00ff;
   --accent-color-1: rgba(255, 0, 112, 0.4);
-  background-image: url(../images/cover-image-dark.png);
-}
+  --back-image: url(../images/cover-image-dark.png);
 
-.decoration__item {
-  display: flex;
+  .decoration__item {
+    display: flex;
+  }
 }
