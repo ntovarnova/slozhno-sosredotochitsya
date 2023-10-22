@@ -133,9 +133,6 @@ button {
   align-items: flex-end;
   gap: 13px;
   list-style: none;
-}
-
-.header__theme-menu-list {
   position: relative;
 }
 
@@ -172,13 +169,22 @@ button {
 
 .title-decor-five,
 .title-decor-pictures {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: var(--accent-color, #ff0070);
   color: var(--title-color, #000028);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  ont-family: IBM Plex Mono, sans-serif, Arial, Helvetica, Bold Regular;
 }
 
 .title-decor-text {
   font-weight: 400;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px;
   background-color: var(--accent-color, #ff0070);
   color: var(--title-color, #000028);
 }
@@ -219,7 +225,7 @@ button {
   grid-template-columns: 1fr 2fr;
   padding: 0px 20px;
   gap: 20px;
-  margin-block-end: 70px;
+  margin-block-end: 80px;
   grid-auto-rows: auto;
   grid-template-areas:
     "a b"
@@ -261,7 +267,7 @@ span.text-shadow {
 }
 
 .content-section-pictures {
-  margin-block-end: 40px;
+  margin-block-end: 60px;
   padding: 0 20px;
 }
 
@@ -330,7 +336,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .footer__title {
@@ -404,7 +410,7 @@ img {
   }
 
   .content-section-how {
-    margin-block-end: 40px;
+    margin-block-end: 80px;
   }
 
   .content__paragraph,
@@ -472,24 +478,33 @@ img {
     margin-block-end: 20px;
   }
 
-  .content__text-block {
-    margin-block-end: 20px;
-  }
-
   .content__paragraph {
     min-width: 351.027px;
+    margin-block-end: 20px;
   }
 
   .content__paragraph-imagine {
     min-width: 354.839px;
+    margin-block-end: 20px;
   }
 
   .content__paragraph-take-a-walk {
     min-width: 353.502px;
+    margin-bottom: 20px;
   }
 
-  .section-why,
-  .section-what,
+  .section-why {
+    display: block;
+    padding: 0 10px;
+    margin-block-end: 50px;
+  }
+
+  .section-what {
+    display: block;
+    padding: 0 10px;
+    margin-block-end: 50px;
+  }
+
   .content-section-how {
     display: block;
     padding: 0 10px;
@@ -527,7 +542,11 @@ img {
   }
 
   .footer {
-    padding: 10px;
+    padding: 0 10px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .footer__decorated-zone::after {
