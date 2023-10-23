@@ -17,10 +17,10 @@
   --bg-color: #fff1f7;
   --accent-color-1: rgba(50, 49, 45, 0.4);
   --back-image: url(../images/cover-image-light.png);
-}
 
-.decoration__item {
-  display: none;
+  .decoration__item {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,11 +33,10 @@
     --bg-color: #fff1f7;
     --accent-color-1: rgba(50, 49, 45, 0.4);
     --back-image: url(../images/cover-image-light.png);
-  }
 
-  .decoration__item {
-    display: none;
+    .decoration__item {
+      display: none;
+    }
   }
 }
-
 /* Дублируем переменные светлой темы*/
